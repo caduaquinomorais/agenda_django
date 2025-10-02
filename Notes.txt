@@ -1,0 +1,14 @@
+No settings:
+    TEMPLATES = 
+    'DIRS' : BASE_DIR / 'base_templates'
+    STATICFILES_DIRS = (
+        BASE_DIR / 'base_static'
+    )
+
+Migrations:
+python manage.py makemigrations
+python manage.py migrate
+
+Administrativo django:
+python manage.py createsuperuser
+python manage.py changepassword
