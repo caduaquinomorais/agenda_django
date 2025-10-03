@@ -5,6 +5,11 @@ No settings:
         BASE_DIR / 'base_static'
     )
 
+STATIC_ROOT = BASE_DIR / 'static' #Collectstatic
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
 Migrations:
 python manage.py makemigrations
 python manage.py migrate
@@ -12,3 +17,5 @@ python manage.py migrate
 Administrativo django:
 python manage.py createsuperuser
 python manage.py changepassword
+
+Apagar static futuramente, será feito pelo servidor.
